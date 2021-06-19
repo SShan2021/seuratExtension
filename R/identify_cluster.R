@@ -9,9 +9,8 @@
 #' clusters and the cluster type for each gene.
 #'
 #' @examples
-#' \dontrun{
 #' output_table <- identify_cluster(topmarkers)
-#' }
+#'
 #'
 #' @export
 #' @importFrom dplyr "%>%"

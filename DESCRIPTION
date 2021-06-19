@@ -3,7 +3,7 @@ Type: Package
 Title: Functions based on Seurat
 Version: 0.1.0
 Author@R: person("Sophie", "Shan", email = "ssm2223@columbia.edu", role = c("cre", "aut"))
-Maintainer: The package maintainer <yourself@somewhere.net>
+Maintainer: The package maintainer <ssm2223@columbia.edu>
 Description: Makes it easy to figure out types of cells within each cluster. Also
   loops through conserve markers and fisher's test for LIPA. 
 URL: https://github.com/SShan2021/seuratExtension

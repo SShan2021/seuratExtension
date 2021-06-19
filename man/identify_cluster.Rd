@@ -18,8 +18,7 @@ Goes through given top markers and extract those that match the
 cluster identifiers.
 }
 \examples{
-\dontrun{
 output_table <- identify_cluster(topmarkers)
-}
+
 
 }
