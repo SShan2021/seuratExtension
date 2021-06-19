@@ -13,15 +13,15 @@ Depends:
 Imports:
     dplyr 
 Suggests:
-    future
-    Seurat
-    patchwork
-    tidyverse
-    cowplot
-    Matrix
-    knitr
-    scater
-    MAST 
+    future,
+    Seurat,
+    patchwork,
+    tidyverse,
+    cowplot,
+    Matrix,
+    knitr,
+    scater,
+    MAST, 
     ggplot2
 License: GPL-3
 Encoding: UTF-8
