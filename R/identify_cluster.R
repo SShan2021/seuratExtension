@@ -17,6 +17,7 @@
 #' @importFrom dplyr "%>%"
 #'
 
+source('http://www.dr-spiess.de/scripts/cbind.na.R')
 
 identify_cluster <- function(topmarkers){
 

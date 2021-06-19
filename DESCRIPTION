@@ -11,7 +11,7 @@ BugReports: https://github.com/SShan2021/seuratExtension/issues
 Depends:
     R (>= 3.5.0)
 Imports:
-    dplyr 
+    dplyr
 Suggests:
     future,
     Seurat,
