@@ -17,9 +17,9 @@
 #' @importFrom dplyr "%>%"
 #'
 
-source('http://www.dr-spiess.de/scripts/cbind.na.R')
-
 identify_cluster <- function(topmarkers){
+
+source('http://www.dr-spiess.de/scripts/cbind.na.R')
 
 all.macrophages <- c("Adgre1", "Csf1r", "Fcgr1", "CD64", "Cd68", "Cd14", "Mafb", "Ly6c2")
 reslike.macrophages <- c("Csf1r", "Pf4", "Txnip", "F13a1", "Sepp1", "Lyve1", "Timp2", "Lyz2", "Folr2", "Ccl9", "Gas6", "CD206", "Mrc1")
