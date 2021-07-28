@@ -4,7 +4,7 @@
 \alias{identify_cluster}
 \title{identify_cluster}
 \usage{
-identify_cluster(topmarkers)
+identify_cluster(topmarkers, upper = "na", top20 = "na", writecsv = "na")
 }
 \arguments{
 \item{topmarkers}{A dataset of topmarkers}
@@ -18,7 +18,7 @@ Goes through given top markers and extract those that match the
 cluster identifiers.
 }
 \examples{
-output_table <- identify_cluster(topmarkers)
+output_table <- identify_cluster(topmarkers, upper = "upper", top20 = "top20", writecsv = "writecsv")
 
 
 }

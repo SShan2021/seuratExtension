@@ -4,7 +4,7 @@
 \alias{cluster_averagelog2FC}
 \title{cluster_averagelog2FC}
 \usage{
-cluster_averagelog2FC(dataset)
+cluster_averagelog2FC(dataset, weight = "na")
 }
 \arguments{
 \item{dataset}{The data frame output of identify_cluster.R}
@@ -16,7 +16,7 @@ A data frame object that has avg_log2FC per cluster for each
 Goes through given top markers and outputs the avg_log2FC per cluster for each cell type
 }
 \examples{
-cluster2_avglog2FC <- cluster_averagelog2FC(dataset = output_table)
+cluster2_avglog2FC <- cluster_averagelog2FC(dataset = output_table, weight = "weighted")
 
 
 }

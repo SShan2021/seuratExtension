@@ -1,12 +1,12 @@
 #' @title top_cluster
 #'
-#' @description
+#' @description Gives you the top cluster from cluster_averagelog2FC
 #'
-#' @param dataset
+#' @param dataset The output of cluster_averagelog2FC.
 #'
-#' @return
+#' @return A dataframe with the top clusters labeled.
 #'
-#' @examples
+#' @examples top_cluster(dataset)
 #'
 #'
 #'

@@ -7,15 +7,16 @@
 rename_indents(seuratobject, labels)
 }
 \arguments{
-\item{dataset}{}
+\item{dataset}{The seurat object and the outuput of top_cluster.}
 }
 \value{
-
+N/a
 }
 \description{
-
+Relabels the clusters automatically for graphing.
 }
 \examples{
+rename_indents(seuratobject, labels)
 
 
 
