@@ -61,15 +61,18 @@ identify_cluster <- function(topmarkers, upper = "na", top20 = "na", writecsv = 
     granulocytes <- toupper(granulocytes)
     nk.cells <- toupper(nk.cells)
     cell.cycle.related <- toupper(cell.cycle.related)
+    endothelial.cells <- toupper(endothelial.cells)
   }
 
   clustermarkers_list <- c(all.macrophages, reslike.macrophages, inflammatory.macrophages, trem2high.macrophages,
                            ifnic.macrophages, monocyte, modc.macrophages, cDC1, matureDC, t.cell, cxcr6.t.cell, cd8.t.cell,
-                           b.cells, mast.cells, granulocytes, nk.cells, cell.cycle.related, smc.cells)
+                           b.cells, mast.cells, granulocytes, nk.cells, cell.cycle.related, smc.cells,
+                           endothelial.cells)
 
   clustermarkers <- as.data.frame(cbind.na(all.macrophages, reslike.macrophages, inflammatory.macrophages, trem2high.macrophages,
                                            ifnic.macrophages, monocyte, modc.macrophages, cDC1, matureDC, t.cell, cxcr6.t.cell,
-                                           cd8.t.cell,b.cells, mast.cells, granulocytes, nk.cells, cell.cycle.related, smc.cells))
+                                           cd8.t.cell,b.cells, mast.cells, granulocytes, nk.cells, cell.cycle.related, smc.cells,
+                                           endothelial.cells))
 
   if(top20 == "top20"){
     topmarkers <- as.data.frame(topmarkers %>% group_by(cluster) %>% top_n(n = 20, wt = avg_log2FC))
