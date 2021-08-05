@@ -39,6 +39,8 @@ identify_cluster <- function(topmarkers, upper = "na", top20 = "na", writecsv = 
   nk.cells <- c("Klrb1c", "Gzma", "Klrc1", "Ncr1")
   cell.cycle.related <- c("Ccna2", "Cdk1", "Cdk4")
   smc.cells <- c("Acta2", "Cnn1", "Tagln", "Myh11")
+  endothelial.cells <- c("Cd31", "Cd34", "Cd45", "Cd54", "Lyve1",
+                         "Tek", "Cd106")
 
 
   if(upper == "upper"){
