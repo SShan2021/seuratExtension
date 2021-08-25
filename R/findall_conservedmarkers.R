@@ -1,0 +1,37 @@
+#' @title findall_conservedmarkers
+#'
+#' @description
+#'
+#' @param dataset The data frame output of identify_cluster.R
+#'
+#' @return A data frame object that has avg_log2FC per cluster for each
+#'
+#' @examples
+#' findall_conservedmarkers(harmony_30pc_20param_0.2, clusternumber = 9, grouping = "GFP")
+#'
+#'
+#' @export
+#' @importFrom dplyr "%>%"
+#'
+
+findall_conservedmarkers <- function(seuratobject, clusternumber, grouping = "sample"){
+  datalist = list()
+
+  for (i in 1:clusternumber) {
+
+    skip_to_next <- FALSE
+
+    tryCatch(
+      datalist[[i]] <- FindConservedMarkers(seuratobject,
+                                            ident.1 = i-1, grouping.var = grouping),
+      error = function(e)
+      { skip_to_next <<- TRUE
+      message('Caught an error!')
+      print(e)})
+
+    if(skip_to_next) { next }
+  }
+
+  return(datalist)
+
+}
