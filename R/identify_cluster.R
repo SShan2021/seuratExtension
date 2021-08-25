@@ -118,7 +118,9 @@ identify_cluster <- function(topmarkers, upper = "na", top20 = "na", writecsv = 
     write.csv(topmarkers, "topDEconservedgenes.csv")
   }
 
-  merged_dataframe <- unique(as.data.frame(merged_dataframe))
+  merged_dataframe <- as.data.frame(merged_dataframe)
+
+  merged_dataframe <- unique(merged_dataframe)
 
   return(merged_dataframe)
 
