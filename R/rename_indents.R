@@ -1,8 +1,9 @@
-#' @title rename_indents
+#' @title rename_indents (All)
 #'
 #' @description Relabels the clusters automatically for graphing.
 #'
-#' @param dataset The seurat object and the outuput of top_cluster.
+#' @param seuratobject The seurat object and the outuput of top_cluster.
+#' @param labels The output of top_cluster
 #'
 #' @return N/a
 #'

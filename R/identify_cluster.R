@@ -1,9 +1,13 @@
-#' @title identify_cluster
+#' @title identify_cluster (All)
 #'
 #' @description Goes through given top markers and extract those that match the
 #' cluster identifiers.
 #'
 #' @param topmarkers A dataset of topmarkers
+#' @param upper upper = "upper" if cells are upper case
+#' @param top20 top20 = "top20" if only want to consider top 20 markers per cluster
+#' @param writecsv writecsv = "writecsv" if want to have csv of top 20 markers per cluster
+#' @param nameoffile Put name of what you want to name the output in " ".
 #'
 #' @return A data frame object that has all the markers and corresponding
 #' clusters and the cluster type for each gene.
@@ -17,7 +21,8 @@
 #'
 
 
-identify_cluster <- function(topmarkers, upper = "na", top20 = "na", writecsv = "na"){
+identify_cluster <- function(topmarkers, upper = "na", top20 = "na",
+                             writecsv = "na", nameoffile = "topmarkers.csv"){
 
   source('http://www.dr-spiess.de/scripts/cbind.na.R')
 
@@ -115,7 +120,7 @@ identify_cluster <- function(topmarkers, upper = "na", top20 = "na", writecsv = 
   }
 
   if(writecsv == "writecsv"){
-    write.csv(topmarkers, "topDEconservedgenes.csv")
+    write.csv(topmarkers, nameoffile)
   }
 
   merged_dataframe <- as.data.frame(merged_dataframe)
