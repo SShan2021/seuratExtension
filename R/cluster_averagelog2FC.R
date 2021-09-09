@@ -1,6 +1,6 @@
-#' @title (All)cluster_averagelog2FC
+#' @title cluster_averagelog2FC
 #'
-#' @description Goes through given top markers and outputs the avg_log2FC per cluster for each cell type
+#' @description (All)Goes through given top markers and outputs the avg_log2FC per cluster for each cell type
 #'
 #' @param dataset The data frame output of identify_cluster.R
 #'

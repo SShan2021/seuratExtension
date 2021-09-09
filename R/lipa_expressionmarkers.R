@@ -1,6 +1,6 @@
-#' @title (LipaTg)lipa_expressionmarkers 
+#' @title lipa_expressionmarkers 
 #'
-#' @description Returns the expression per cluster of the feature you
+#' @description (LipaTg)Returns the expression per cluster of the feature you
 #' want expressed sorted by avg2logFC
 #'
 #' @param seuratobject A seurat object.

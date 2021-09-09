@@ -1,6 +1,6 @@
-#' @title (LipaTg)significant_lipafisher
+#' @title significant_lipafisher
 #'
-#' @description Gives you which cluster have significant
+#' @description (LipaTg) Gives you which cluster have significant
 #'
 #' @param dataset The output of correctlipa_fisher.test
 #'

@@ -1,6 +1,6 @@
-#' @title (LipaTg)lipaallmacro_fishertest 
+#' @title lipaallmacro_fishertest 
 #'
-#' @description Tests for Lipa in macrophages populations in GFP+/GFP-.
+#' @description (LipaTg)Tests for Lipa in macrophages populations in GFP+/GFP-.
 #'
 #' @param output Output of lipa_expressionmarkers
 #' @param counts Output of originalcount

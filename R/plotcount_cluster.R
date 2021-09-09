@@ -1,6 +1,6 @@
-#' @title (All)plotcount_cluster 
+#' @title plotcount_cluster 
 #'
-#' @description Plots the distribution of cells by cluster, split by
+#' @description (All)Plots the distribution of cells by cluster, split by
 #' original datatype.
 #'
 #' @param dataset A seurat object.

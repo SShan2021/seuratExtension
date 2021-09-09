@@ -1,6 +1,6 @@
-#' @title (All)findall_conservedmarkers 
+#' @title findall_conservedmarkers 
 #'
-#' @description Finds all the conserved markers for dataset automatically skipping
+#' @description (All)Finds all the conserved markers for dataset automatically skipping
 #' datasets which are too small
 #'
 #' @param seuratobject The data frame output of identify_cluster.R

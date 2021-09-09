@@ -1,6 +1,6 @@
-#' @title (All)originalcount
+#' @title originalcount
 #'
-#' @description Outputs the counts in the cluster by original datatype.
+#' @description (All)Outputs the counts in the cluster by original datatype.
 #'
 #' @param dataset A seurat object.
 #'

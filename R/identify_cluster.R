@@ -1,6 +1,6 @@
-#' @title (All)identify_cluster
+#' @title identify_cluster
 #'
-#' @description Goes through given top markers and extract those that match the
+#' @description (All)Goes through given top markers and extract those that match the
 #' cluster identifiers.
 #'
 #' @param topmarkers A dataset of topmarkers

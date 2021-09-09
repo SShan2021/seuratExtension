@@ -1,6 +1,6 @@
-#' @title (All)top_cluster 
+#' @title top_cluster 
 #'
-#' @description Gives you the top cluster from cluster_averagelog2FC
+#' @description (All) Gives you the top cluster from cluster_averagelog2FC
 #'
 #' @param data The output of cluster_averagelog2FC.
 #'
