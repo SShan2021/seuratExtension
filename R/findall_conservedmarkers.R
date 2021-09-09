@@ -1,4 +1,4 @@
-#' @title findall_conservedmarkers (All)
+#' @title (All)findall_conservedmarkers 
 #'
 #' @description Finds all the conserved markers for dataset automatically skipping
 #' datasets which are too small

@@ -1,4 +1,4 @@
-#' @title originalcount (All)
+#' @title (All)originalcount
 #'
 #' @description Outputs the counts in the cluster by original datatype.
 #'

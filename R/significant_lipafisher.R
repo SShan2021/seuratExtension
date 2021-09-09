@@ -1,4 +1,4 @@
-#' @title significant_lipafisher (LipaTg)
+#' @title (LipaTg)significant_lipafisher
 #'
 #' @description Gives you which cluster have significant
 #'

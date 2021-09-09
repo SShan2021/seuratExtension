@@ -1,4 +1,4 @@
-#' @title lipaallmacro_fishertest (LipaTg)
+#' @title (LipaTg)lipaallmacro_fishertest 
 #'
 #' @description Tests for Lipa in macrophages populations in GFP+/GFP-.
 #'

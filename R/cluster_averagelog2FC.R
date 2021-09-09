@@ -1,4 +1,4 @@
-#' @title cluster_averagelog2FC
+#' @title (All)cluster_averagelog2FC
 #'
 #' @description Goes through given top markers and outputs the avg_log2FC per cluster for each cell type
 #'

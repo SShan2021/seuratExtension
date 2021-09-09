@@ -1,4 +1,4 @@
-#' @title rename_indents (All)
+#' @title (All)rename_indents
 #'
 #' @description Relabels the clusters automatically for graphing.
 #'

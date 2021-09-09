@@ -1,4 +1,4 @@
-#' @title plotcount_cluster (All)
+#' @title (All)plotcount_cluster 
 #'
 #' @description Plots the distribution of cells by cluster, split by
 #' original datatype.

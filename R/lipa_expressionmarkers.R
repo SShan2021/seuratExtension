@@ -1,4 +1,4 @@
-#' @title lipa_expressionmarkers (LipaTg)
+#' @title (LipaTg)lipa_expressionmarkers 
 #'
 #' @description Returns the expression per cluster of the feature you
 #' want expressed sorted by avg2logFC

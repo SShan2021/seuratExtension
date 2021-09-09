@@ -1,4 +1,4 @@
-#' @title identify_cluster (All)
+#' @title (All)identify_cluster
 #'
 #' @description Goes through given top markers and extract those that match the
 #' cluster identifiers.
