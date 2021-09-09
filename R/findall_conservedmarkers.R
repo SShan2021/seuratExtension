@@ -1,8 +1,11 @@
-#' @title findall_conservedmarkers
+#' @title findall_conservedmarkers (All)
 #'
-#' @description
+#' @description Finds all the conserved markers for dataset automatically skipping
+#' datasets which are too small
 #'
-#' @param dataset The data frame output of identify_cluster.R
+#' @param seuratobject The data frame output of identify_cluster.R
+#' @param clusternumber The number of clusters
+#' @param grouping Grouping Variable (ie. GFP)
 #'
 #' @return A data frame object that has avg_log2FC per cluster for each
 #'
