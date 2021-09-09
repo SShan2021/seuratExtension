@@ -13,7 +13,7 @@ cluster_averagelog2FC(dataset, weight = "na")
 A data frame object that has avg_log2FC per cluster for each
 }
 \description{
-Goes through given top markers and outputs the avg_log2FC per cluster for each cell type
+(All)Goes through given top markers and outputs the avg_log2FC per cluster for each cell type
 }
 \examples{
 cluster2_avglog2FC <- cluster_averagelog2FC(dataset = output_table, weight = "weighted")

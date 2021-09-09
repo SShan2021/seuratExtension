@@ -7,13 +7,18 @@
 findall_conservedmarkers(seuratobject, clusternumber, grouping = "sample")
 }
 \arguments{
-\item{dataset}{The data frame output of identify_cluster.R}
+\item{seuratobject}{The data frame output of identify_cluster.R}
+
+\item{clusternumber}{The number of clusters}
+
+\item{grouping}{Grouping Variable (ie. GFP)}
 }
 \value{
 A data frame object that has avg_log2FC per cluster for each
 }
 \description{
-
+(All)Finds all the conserved markers for dataset automatically skipping
+datasets which are too small
 }
 \examples{
 findall_conservedmarkers(harmony_30pc_20param_0.2, clusternumber = 9, grouping = "GFP")

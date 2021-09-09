@@ -4,17 +4,31 @@
 \alias{identify_cluster}
 \title{identify_cluster}
 \usage{
-identify_cluster(topmarkers, upper = "na", top20 = "na", writecsv = "na")
+identify_cluster(
+  topmarkers,
+  upper = "na",
+  top20 = "na",
+  writecsv = "na",
+  nameoffile = "topmarkers.csv"
+)
 }
 \arguments{
 \item{topmarkers}{A dataset of topmarkers}
+
+\item{upper}{upper = "upper" if cells are upper case}
+
+\item{top20}{top20 = "top20" if only want to consider top 20 markers per cluster}
+
+\item{writecsv}{writecsv = "writecsv" if want to have csv of top 20 markers per cluster}
+
+\item{nameoffile}{Put name of what you want to name the output in " ".}
 }
 \value{
 A data frame object that has all the markers and corresponding
 clusters and the cluster type for each gene.
 }
 \description{
-Goes through given top markers and extract those that match the
+(All)Goes through given top markers and extract those that match the
 cluster identifiers.
 }
 \examples{

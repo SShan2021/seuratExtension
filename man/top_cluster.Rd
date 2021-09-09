@@ -7,13 +7,13 @@
 top_cluster(data)
 }
 \arguments{
-\item{dataset}{The output of cluster_averagelog2FC.}
+\item{data}{The output of cluster_averagelog2FC.}
 }
 \value{
 A dataframe with the top clusters labeled.
 }
 \description{
-Gives you the top cluster from cluster_averagelog2FC
+(All) Gives you the top cluster from cluster_averagelog2FC
 }
 \examples{
 top_cluster(dataset)
