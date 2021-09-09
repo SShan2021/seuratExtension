@@ -14,8 +14,7 @@
 #'
 #' @examples
 #' output_table <- identify_cluster(topmarkers, upper = "upper", top20 = "top20", writecsv = "writecsv",
-#'nameoffile = "topmarkers_40pc_04res.csv")
-#'
+#' nameoffile = "topmarkers_40pc_04res.csv")
 #'
 #' @export
 #' @importFrom dplyr "%>%"
