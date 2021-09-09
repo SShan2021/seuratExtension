@@ -8,7 +8,7 @@
 #' @return N/a
 #'
 #' @examples plaque.combined_40pc_0.6 <- rename_indents(plaque.combined_40pc_0.6,
-top_cluster(plaque.combined_40pc_0.6clusteraverages))
+#' top_cluster(plaque.combined_40pc_0.6clusteraverages))
 #'
 #'
 #'
