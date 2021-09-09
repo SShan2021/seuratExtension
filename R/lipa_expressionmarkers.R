@@ -10,7 +10,7 @@
 #' in each cluster.
 #'
 #' @examples lipa.40pc_0.2 <- lipa_expressionmarkers(seuratobject =
-plaque.combined_40pc_0.2, clusternumber = clust_40pc_0.2)
+#' plaque.combined_40pc_0.2, clusternumber = clust_40pc_0.2)
 #'
 #'
 #'
