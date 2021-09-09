@@ -1,17 +1,16 @@
-#' @title lipa_expressionmarkers 
+#' @title lipa_expressionmarkers
 #'
 #' @description (LipaTg)Returns the expression per cluster of the feature you
 #' want expressed sorted by avg2logFC
 #'
 #' @param seuratobject A seurat object.
 #' @param clusternumber Output of top_cluster.
-#' @param feature Name of the feature you want to find
 #'
 #' @return A dataframe of the avg2logFC of the feature you want expressed
 #' in each cluster.
 #'
-#' @examples lipa.40pc_0.2 <- lipa_expressionmarkers(plaque.combined_40pc_0.2,clust_40pc_0.2,
-#' clusternumber = clust_40pc_0.2, feature = "Lipa")
+#' @examples lipa.40pc_0.2 <- lipa_expressionmarkers(seuratobject =
+plaque.combined_40pc_0.2, clusternumber = clust_40pc_0.2)
 #'
 #'
 #'
@@ -19,7 +18,7 @@
 #' @importFrom dplyr "%>%"
 #'
 
-lipa_expressionmarkers <- function(seuratobject, clusternumber, feature){
+lipa_expressionmarkers <- function(seuratobject, clusternumber){
   ## Assign identify based on GFP+/GFP- group and cluster membership
   seuratobject$celltype <- paste(Idents(seuratobject), seuratobject$GFP, sep = "_")
   Idents(seuratobject) <- "celltype"
@@ -32,7 +31,7 @@ lipa_expressionmarkers <- function(seuratobject, clusternumber, feature){
 
     tryCatch(
       datalist[[i]] <- FindMarkers(seuratobject, paste0(i-1, "_GFPpositive"),
-                                   ident.2 = paste0(i-1, "_GFPnegative"), features = feature,
+                                   ident.2 = paste0(i-1, "_GFPnegative"), features = "Lipa",
                                    logfc.threshold = 0, min.diff.pct = 0, min.pct = 0,
                                    min.cells.feature = 0, min.cells.group = 0),
       error = function(e)
@@ -59,6 +58,7 @@ lipa_expressionmarkers <- function(seuratobject, clusternumber, feature){
   merged$cluster <- as.factor(merged$cluster)
 
   return(merged %>%
-           dplyr::select(gene, cluster, clusterlabels, avg_log2FC, GFPpositive.pct = pct.1, GFPnegative.pct = pct.2, p_val, p_val_adj))
+           dplyr::select(gene, cluster, clusterlabels, avg_log2FC, GFPpositive.pct = pct.1,
+           GFPnegative.pct = pct.2, p_val, p_val_adj))
 
 }

@@ -7,7 +7,8 @@
 #'
 #' @return N/a
 #'
-#' @examples rename_indents(seuratobject, labels)
+#' @examples plaque.combined_40pc_0.6 <- rename_indents(plaque.combined_40pc_0.6,
+top_cluster(plaque.combined_40pc_0.6clusteraverages))
 #'
 #'
 #'
