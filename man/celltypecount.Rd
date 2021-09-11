@@ -8,8 +8,6 @@ celltypecount(dataset, label)
 }
 \arguments{
 \item{dataset}{A seurat object.}
-
-\item{label}{Original datatype (ie. GFP+/GFP-)}
 }
 \value{
 A dataframe of the counts in the cluster by celltype.

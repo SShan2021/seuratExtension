@@ -4,12 +4,10 @@
 \alias{plotcount_cluster}
 \title{plotcount_cluster}
 \usage{
-plotcount_cluster(dataset, GFP)
+plotcount_cluster(dataset)
 }
 \arguments{
 \item{dataset}{A seurat object.}
-
-\item{label}{Original datatype (ie. GFP+/GFP-)}
 }
 \value{
 A barplot of the counts in each cluster by celltype.

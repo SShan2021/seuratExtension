@@ -4,7 +4,6 @@
 #' identify_cluster
 #'
 #' @param dataset A seurat object.
-#' @param label Original datatype (ie. GFP+/GFP-)
 #'
 #' @return A dataframe of the counts in the cluster by celltype.
 #'

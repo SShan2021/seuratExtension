@@ -4,7 +4,6 @@
 #' original datatype.
 #'
 #' @param dataset A seurat object.
-#' @param label Original datatype (ie. GFP+/GFP-)
 #'
 #' @return A barplot of the counts in each cluster by celltype.
 #'
@@ -16,7 +15,7 @@
 #' @importFrom dplyr "%>%"
 #'
 
-plotcount_cluster <- function (dataset, GFP) {
+plotcount_cluster <- function (dataset) {
 
   a <- dataset@meta.data %>% dplyr::count(seurat_clusters, clusterlabels, GFP) %>%
     group_split(GFP)
