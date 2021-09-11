@@ -4,14 +4,12 @@
 \alias{lipa_expressionmarkers}
 \title{lipa_expressionmarkers}
 \usage{
-lipa_expressionmarkers(seuratobject, clusternumber, feature)
+lipa_expressionmarkers(seuratobject, clusternumber)
 }
 \arguments{
 \item{seuratobject}{A seurat object.}
 
 \item{clusternumber}{Output of top_cluster.}
-
-\item{feature}{Name of the feature you want to find}
 }
 \value{
 A dataframe of the avg2logFC of the feature you want expressed
@@ -22,8 +20,8 @@ in each cluster.
 want expressed sorted by avg2logFC
 }
 \examples{
-lipa.40pc_0.2 <- lipa_expressionmarkers(plaque.combined_40pc_0.2,clust_40pc_0.2,
-clusternumber = clust_40pc_0.2, feature = "Lipa")
+lipa.40pc_0.2 <- lipa_expressionmarkers(seuratobject =
+plaque.combined_40pc_0.2, clusternumber = clust_40pc_0.2)
 
 
 

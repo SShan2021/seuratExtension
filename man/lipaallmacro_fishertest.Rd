@@ -21,7 +21,7 @@ subpopulations of GFP+/GFP-.
 (LipaTg)Tests for Lipa in macrophages populations in GFP+/GFP-.
 }
 \examples{
-lipa.40pc_0.2 <- lipaallmacro_fishertest(plaque.combined_40pc_0.2,clust_40pc_0.2,
+lipa.40pc_0.2 <- lipaallmacro_fishertest(plaque.combined_40pc_0.2,
 counts = counts_40pc_0.2, alt = "two.sided")
 
 

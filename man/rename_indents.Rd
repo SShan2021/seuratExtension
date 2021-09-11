@@ -18,7 +18,8 @@ N/a
 (All)Relabels the clusters automatically for graphing.
 }
 \examples{
-rename_indents(seuratobject, labels)
+plaque.combined_40pc_0.6 <- rename_indents(plaque.combined_40pc_0.6,
+top_cluster(plaque.combined_40pc_0.6clusteraverages))
 
 
 

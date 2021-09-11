@@ -32,7 +32,7 @@ clusters and the cluster type for each gene.
 cluster identifiers.
 }
 \examples{
-output_table <- identify_cluster(topmarkers, upper = "upper", top20 = "top20", writecsv = "writecsv")
-
+output_table <- identify_cluster(topmarkers, upper = "upper", top20 = "top20", writecsv = "writecsv",
+nameoffile = "topmarkers_40pc_04res.csv")
 
 }
