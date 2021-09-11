@@ -13,7 +13,7 @@ significant_lipafisher(dataset)
 A dataframe with the significant Lipa clusters
 }
 \description{
-(LipaTg) Gives you which cluster have significant
+(LipaTg) Gives you which cluster have significant lipa subpopulations.
 }
 \examples{
 lipa.40pc_0.2_sig <- significant_lipafisher(lipa.40pc_0.2_fisher)

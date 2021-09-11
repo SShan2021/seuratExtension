@@ -4,7 +4,7 @@
 \alias{plotcount_cluster}
 \title{plotcount_cluster}
 \usage{
-plotcount_cluster(dataset, label)
+plotcount_cluster(dataset, GFP)
 }
 \arguments{
 \item{dataset}{A seurat object.}
@@ -15,12 +15,11 @@ plotcount_cluster(dataset, label)
 A barplot of the counts in each cluster by celltype.
 }
 \description{
-(All)Plots the distribution of cells by cluster, split by
+(LipaTg)Plots the distribution of cells by cluster, split by
 original datatype.
 }
 \examples{
-plotcounts_40pc_0.2 <- plotcount_cluster(plaque.combined_40pc_0.2,
-label = "GFP")
+plotcounts_40pc_0.2 <- plotcount_cluster(plaque.combined_40pc_0.2)
 
 
 

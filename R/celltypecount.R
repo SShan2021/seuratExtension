@@ -1,6 +1,6 @@
 #' @title celltypecount
 #'
-#' @description (All)Outputs the counts in the cluster by celltype given by
+#' @description (LipaTg)Outputs the counts in the cluster by celltype given by
 #' identify_cluster
 #'
 #' @param dataset A seurat object.
@@ -8,7 +8,7 @@
 #'
 #' @return A dataframe of the counts in the cluster by celltype.
 #'
-#' @examples cellcounts_40pc_0.2 <- celltypecount(plaque.combined_40pc_0.2, label = "GFP")
+#' @examples cellcounts_40pc_0.2 <- celltypecount(plaque.combined_40pc_0.2)
 #'
 #'
 #'
@@ -17,6 +17,6 @@
 #'
 
 celltypecount <- function(dataset, label){
-  counts <- dataset@meta.data %>% dplyr::count(clusterlabels, label) %>% spread(clusterlabels, n)
+  counts <- dataset@meta.data %>% dplyr::count(clusterlabels, GFP) %>% spread(clusterlabels, n)
   return(counts)
 }

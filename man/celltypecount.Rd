@@ -15,11 +15,11 @@ celltypecount(dataset, label)
 A dataframe of the counts in the cluster by celltype.
 }
 \description{
-(All)Outputs the counts in the cluster by celltype given by
+(LipaTg)Outputs the counts in the cluster by celltype given by
 identify_cluster
 }
 \examples{
-cellcounts_40pc_0.2 <- celltypecount(plaque.combined_40pc_0.2, label = "GFP")
+cellcounts_40pc_0.2 <- celltypecount(plaque.combined_40pc_0.2)
 
 
 
