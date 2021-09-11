@@ -1,4 +1,4 @@
-#' @title celltypecount 
+#' @title celltypecount
 #'
 #' @description (All)Outputs the counts in the cluster by celltype given by
 #' identify_cluster

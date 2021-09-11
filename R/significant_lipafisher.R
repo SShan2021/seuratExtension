@@ -1,6 +1,6 @@
 #' @title significant_lipafisher
 #'
-#' @description (LipaTg) Gives you which cluster have significant
+#' @description (LipaTg) Gives you which cluster have significant lipa subpopulations. 
 #'
 #' @param dataset The output of correctlipa_fisher.test
 #'
@@ -16,4 +16,3 @@
 significant_lipafisher <- function(dataset) {
   return(dataset[dataset$p.value < 0.05,])
 }
-
